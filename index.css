@@ -21,10 +21,22 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgb(114, 95, 65);
+    background: linear-gradient(225deg, rgba(152, 0, 190, 0.418), rgb(0, 194, 228));
     width: 300px;
     height: 350px;
     border-radius: 5%;
+}
+
+
+
+form:hover{
+    animation: formHover 0.2s forwards;
+}
+
+@keyframes formHover {
+    to {
+        transform: scale(102%);
+    }
 }
 
 h1 {
