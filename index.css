@@ -6,29 +6,53 @@
 }
 
 body {
-    background-color: rgb(223, 223, 223);
+    background: linear-gradient(rgb(88, 244, 255),rgb(163, 113, 255));
 }
 
 section {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 219, 58);
+    padding: 15px;
+    border-radius: 5%;
+}
+
 h1 {
     font-size: 32px;
     letter-spacing: 1px;
-    margin: 20px 0;
-}
-
-form {
-    margin: 20px 0;
-    background-color: red;
-    padding: 30px;
+    padding: 15px 0;
+    text-align: center;
 }
 
 .textfield {
-    margin-bottom: 15px;
-    display: grid;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.textfield input {
+    border-radius: 5%;
+    width: 80%;
+}
+
+.btnSubmit{
+    text-align: center;
+    margin: 7px 0;
+}
+
+.btnSubmit button {
+    background-color: rgb(223, 223, 223);
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+.btnSubmit button:hover {
+    background-color: darkslateblue;
 }
