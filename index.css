@@ -20,39 +20,54 @@ section {
 form {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 219, 58);
-    padding: 15px;
+    justify-content: space-evenly;
+    background-color: rgb(114, 95, 65);
+    width: 300px;
+    height: 350px;
     border-radius: 5%;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 40px;
+    font-weight: 500;
     letter-spacing: 1px;
-    padding: 15px 0;
     text-align: center;
+    color: white;
 }
 
 .textfield {
-    padding: 15px 0;
     text-align: center;
 }
 
 .textfield input {
-    border-radius: 5%;
+    border-radius: 5px;
     width: 80%;
+    height: 38px;
+    border: none;
+    padding: 0 8px;
 }
 
 .btnSubmit{
     text-align: center;
-    margin: 7px 0;
 }
 
 .btnSubmit button {
-    background-color: rgb(223, 223, 223);
-    padding: 7px 20px;
+    background-color: rgb(230, 230, 230);
+    height: 40px;
+    width: 80px;
     border-radius: 5px;
+    border: shadow;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 .btnSubmit button:hover {
-    background-color: darkslateblue;
+    animation: btnSubmit 0.2s both ease-out ;
+}
+
+@keyframes btnSubmit{
+    to {
+        background-color: rgb(189, 189, 189);
+        transform: scale(97%);
+    }
 }
