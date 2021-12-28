@@ -13,7 +13,7 @@ section {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -25,12 +25,12 @@ form {
     width: 300px;
     height: 350px;
     border-radius: 5%;
+    border: 1px solid rgb(0, 194, 228)
 }
-
-
 
 form:hover{
     animation: formHover 0.2s forwards;
+    
 }
 
 @keyframes formHover {
@@ -68,7 +68,6 @@ h1 {
     height: 40px;
     width: 80px;
     border-radius: 5px;
-    border: shadow;
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -81,5 +80,25 @@ h1 {
     to {
         background-color: rgb(189, 189, 189);
         transform: scale(97%);
+    }
+}
+
+.loadingRing {
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid rgb(196, 196, 196);
+    border-left: 5px solid rgb(196, 196, 196);
+    border-right: 5px solid rgb(196, 196, 196);
+    border-radius: 50px;
+    animation: loading 1.2s infinite linear;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    } 
+    to {
+        transform: rotate(360deg);
     }
 }
