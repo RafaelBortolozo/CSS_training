@@ -1,0 +1,67 @@
+form {
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  min-width: 300px;
+  min-height: 350px;
+  max-width: 70vw;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 194, 228);
+}
+
+
+form:hover{
+  animation: formHover 0.2s forwards;
+}
+
+@keyframes formHover {
+  to {
+      transform: scale(102%);
+  }
+}
+
+form h1 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+}
+
+.textfield {
+  text-align: center;
+}
+
+.textfield input {
+  border-radius: 5px;
+  width: 80%;
+  height: 38px;
+  border: none;
+  padding: 0 8px;
+}
+
+.btnSubmit{
+  text-align: center;
+}
+
+.btnSubmit button {
+  background-color: rgb(230, 230, 230);
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.btnSubmit button:hover {
+  animation: btnSubmit 0.2s both ease-out ;
+}
+
+@keyframes btnSubmit{
+  to {
+      background-color: rgb(189, 189, 189);
+      transform: scale(97%);
+  }
+}

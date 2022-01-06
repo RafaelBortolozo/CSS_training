@@ -7,79 +7,16 @@
 
 body {
     background: linear-gradient(rgb(88, 244, 255),rgb(163, 113, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section {
+    position: relative;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    background: linear-gradient(225deg, rgba(152, 0, 190, 0.418), rgb(0, 194, 228));
-    width: 300px;
-    height: 350px;
-    border-radius: 5%;
-}
-
-
-
-form:hover{
-    animation: formHover 0.2s forwards;
-}
-
-@keyframes formHover {
-    to {
-        transform: scale(102%);
-    }
-}
-
-h1 {
-    font-size: 40px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-align: center;
-    color: white;
-}
-
-.textfield {
-    text-align: center;
-}
-
-.textfield input {
-    border-radius: 5px;
-    width: 80%;
-    height: 38px;
-    border: none;
-    padding: 0 8px;
-}
-
-.btnSubmit{
-    text-align: center;
-}
-
-.btnSubmit button {
-    background-color: rgb(230, 230, 230);
-    height: 40px;
-    width: 80px;
-    border-radius: 5px;
-    border: shadow;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.btnSubmit button:hover {
-    animation: btnSubmit 0.2s both ease-out ;
-}
-
-@keyframes btnSubmit{
-    to {
-        background-color: rgb(189, 189, 189);
-        transform: scale(97%);
-    }
+    align-items: center;
 }

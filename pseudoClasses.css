@@ -1,0 +1,129 @@
+.pseudoClasses {
+  max-width: 70vw;
+  border-radius: 10px;
+  background-color: rgb(224, 224, 224);
+  margin: 20px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.pseudoClasses h1 {
+  font-weight: 1000;
+  font-size: 30px;
+}
+
+.pseudoClasses div {
+  text-align: center;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pseudoClasses span {
+  width: 50%;
+}
+
+.pseudoClasses .actionArea{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.562);
+  border-radius: 5px;
+}
+
+.pseudoClasses button {
+  height: 100%;
+  width: 100%;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+}
+
+.pseudoClasses hr {
+  margin: 15px 0;
+}
+
+
+.pseudoClasses .hover button:hover {
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  color: white;
+  transition: 0.2s;
+}
+
+.pseudoClasses .active button:active {
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  color: white;
+  transition: 0.2s;
+}
+
+.pseudoClasses .disabled button:disabled {
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  color: white;
+}
+
+.pseudoClasses .empty span{
+  margin: 15px 0;
+}
+
+.pseudoClasses .empty .actionArea{
+  align-items: center;
+}
+
+.pseudoClasses .empty .actionArea button{
+  width: 90%;
+  height: 40%;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.562);
+}
+
+.pseudoClasses .empty .actionArea button:empty {
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  color: white;
+}
+
+.pseudoClasses .firstOfType .actionArea p:first-of-type{
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  color: white;
+}
+
+.pseudoClasses .lastOfType .actionArea p:last-of-type{
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  color: white;
+}
+
+.pseudoClasses .focus .actionArea{
+  align-items: center;
+}
+
+.pseudoClasses .focus .actionArea input{
+  height: 60%;
+  width: 90%;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.pseudoClasses .focus .actionArea input:focus{
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  color: white;
+}
+
+.pseudoClasses .not .actionArea .word:not(.not){
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  color: white;
+}
+
+.pseudoClasses .checked .actionArea{
+  align-items: center;
+}
+
+.pseudoClasses .checked .actionArea input{
+  height: 50%;
+  width: 50%;
+}
+
+.pseudoClasses .checked .actionArea input:checked{
+  height: 35%;
+  width: 35%;
+}
