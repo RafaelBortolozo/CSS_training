@@ -32,127 +32,157 @@
             <div class="loadingRing"></div>
         </div>
 
-        <div class="pseudoClasses">
-            <div class="title"><h1>Pseudo-classes</h1></div>
-            <hr>
-            <div class="hover">
-                <span>
-                    <h2>:hover</h2>
-                    <h3>Ocorre uma ação quando o mouse passa por cima do botão</h3>
-                </span>
-                <div class="actionArea">
-                    <button>hover</button>
+        <div class="classes">
+            <div class="pseudoClasses">
+                <div class="title">
+                    <h1>Pseudo-classes</h1>
                 </div>
-            </div>
-            <hr>
+                <hr>
+                <div class="hover">
+                    <span>
+                        <h2>:hover</h2>
+                        <h3>Ocorre uma ação quando o mouse passa por cima do botão</h3>
+                    </span>
+                    <div class="actionArea">
+                        <button>hover</button>
+                    </div>
+                </div>
+                <hr>
 
-            <div class="active">
-                <span>
-                    <h2>:active</h2>
+                <div class="active">
+                    <span>
+                        <h2>:active</h2>
                         <h3>Ocorre uma ação ao clicar no botão</h3>
-                </span>
-                <div class="actionArea">
-                    <button>active</button>
+                    </span>
+                    <div class="actionArea">
+                        <button>active</button>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="disabled">
+                    <span>
+                        <h2>:disabled</h2>
+                        <h3>Ocorre uma ação quando o botão é desativado</h3>
+                    </span>
+                    <div class="actionArea">
+                        <button disabled>disabled</button>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="empty">
+                    <span>
+                        <h2>:empty</h2>
+                        <h3>Ocorre uma ação quando o componente está vazio</h3>
+                    </span>
+                    <div class="actionArea">
+                        <button>empty</button>
+                        <button></button>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="firstOfType">
+                    <span>
+                        <h2>:first-of-type</h2>
+                        <h3>Ocorre uma ação no primeiro elemento do grupo</h3>
+                    </span>
+                    <div class="actionArea">
+                        <p>word 1</p>
+                        <p>word 2</p>
+                        <p>word 3</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="lastOfType">
+                    <span>
+                        <h2>:last-of-type</h2>
+                        <h3>Ocorre uma ação no último elemento do grupo</h3>
+                    </span>
+                    <div class="actionArea">
+                        <p>word 1</p>
+                        <p>word 2</p>
+                        <p>word 3</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="focus">
+                    <span>
+                        <h2>:focus</h2>
+                        <h3>Ocorre uma ação ao focar no componente</h3>
+                    </span>
+                    <div class="actionArea">
+                        <input type="text">
+                    </div>
+                </div>
+                <hr>
+
+                <div class="not">
+                    <span>
+                        <h2>:not()</h2>
+                        <h3>Ocorre uma ação em todos os elementos, exceto naquele indicado na função</h3>
+                    </span>
+                    <div class="actionArea">
+                        <p class="word">word 1</p>
+                        <p class="not word">not word 2</p>
+                        <p class="word">word 3</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="checked">
+                    <span>
+                        <h2>:checked</h2>
+                        <h3>Ocorre uma ação quando o checkbox é ativado</h3>
+                    </span>
+                    <div class="actionArea">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <hr>
+
+                <div class="visited">
+                    <span>
+                        <h2>:visited</h2>
+                        <h3>Ocorre uma ação quando o componente é visitado</h3>
+                    </span>
+                    <div class="actionArea">
+                        <a href="#">Any Link</a>
+                    </div>
                 </div>
             </div>
-            <hr>
 
-            <div class="disabled">
-                <span>
-                    <h2>:disabled</h2>
-                    <h3>Ocorre uma ação quando o botão é desativado</h3>
-                </span>
-                <div class="actionArea">
-                    <button disabled>disabled</button>
+            <div class="pseudoElementos">
+                <div class="title">
+                    <h1>Pseudo-elementos</h1>
                 </div>
-            </div>
-            <hr>
+                <hr>
 
-            <div class="empty">
-                <span>
-                    <h2>:empty</h2>
-                    <h3>Ocorre uma ação quando o componente está vazio</h3>
-                </span>
-                <div class="actionArea">
-                    <button>empty</button>
-                    <button></button>
+                <div class="before">
+                    <span>
+                        <h2>::before</h2>
+                        <h3>Complementa um componente com um conteúdo antes do componente</h3>
+                    </span>
+                    <div class="actionArea">
+                        <input type="checkbox">
+                    </div>
                 </div>
-            </div>
-            <hr>
+                <hr>
 
-            <div class="firstOfType">
-                <span>
-                    <h2>:first-of-type</h2>
-                    <h3>Ocorre uma ação no primeiro elemento do grupo</h3>
-                </span>
-                <div class="actionArea">
-                    <p>word 1</p>
-                    <p>word 2</p>
-                    <p>word 3</p>
+                <div class="after">
+                    <span>
+                        <h2>::after</h2>
+                        <h3>Complementa um componente com um conteúdo após o componente</h3>
+                    </span>
+                    <div class="actionArea">
+                        <input type="checkbox">
+                    </div>
                 </div>
-            </div>
-            <hr>
 
-            <div class="lastOfType">
-                <span>
-                    <h2>:last-of-type</h2>
-                    <h3>Ocorre uma ação no último elemento do grupo</h3>
-                </span>
-                <div class="actionArea">
-                    <p>word 1</p>
-                    <p>word 2</p>
-                    <p>word 3</p>
-                </div>
-            </div>
-            <hr>
-
-            <div class="focus">
-                <span>
-                    <h2>:focus</h2>
-                    <h3>Ocorre uma ação ao focar no componente</h3>
-                </span>
-                <div class="actionArea">
-                    <input type="text">
-                </div>
-            </div>
-            <hr>
-
-            <div class="not">
-                <span>
-                    <h2>:not()</h2>
-                    <h3>Ocorre uma ação em todos os elementos, exceto naquele indicado na função</h3>
-                </span>
-                <div class="actionArea">
-                    <p class="word">word 1</p>
-                    <p class="not word">not word 2</p>
-                    <p class="word">word 3</p>
-                </div>
-            </div>
-            <hr>
-
-            <div class="checked">
-                <span>
-                    <h2>:checked</h2>
-                    <h3>Ocorre uma ação quando o checkbox é ativado</h3>
-                </span>
-                <div class="actionArea">
-                    <input type="checkbox">
-                </div>
-            </div>
-        </div>
-
-        <div class="pseudoElementos">
-            <div class="title"><h1>Pseudo-elementos</h1></div>
-            <hr>
-
-            <div class="after">
-                <span>
-                    <h2>::after</h2>
-                    <h3>Ocorre uma ação após a ação da pseudo-classe</h3>
-                </span>
-                <div class="actionArea">
-                    <input type="checkbox">
-                </div>
+                
             </div>
         </div>
     </section>
