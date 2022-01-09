@@ -1,5 +1,5 @@
 .pseudoClasses {
-  max-width: 70vw;
+  max-width: 80vw;
   border-radius: 10px;
   background-color: rgb(224, 224, 224);
   margin: 20px 40px;
@@ -139,3 +139,7 @@
   color: darkolivegreen;
 }
 
+.pseudoClasses .nth-child .actionArea p:nth-child(2) {
+  background: linear-gradient(225deg, rgba(161, 0, 201, 0.418), rgb(0, 178, 209));
+  color: white;
+}
