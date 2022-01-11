@@ -73,7 +73,7 @@
   left: 20%; 
 }
 
-.pseudoElementos .before .actionArea input::after{
+.pseudoElementos .before .actionArea input::{
   content: "disabled";
   font-size: 15px;
   font-weight: bold;
