@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="animations.css" />
     <link rel="stylesheet" type="text/css" href="pseudoClasses.css" />
     <link rel="stylesheet" type="text/css" href="pseudoElementos.css" />
-    <title>Animations</title>
+    <title>document</title>
 </head>
 
 <body>
@@ -34,9 +34,9 @@
                 <div class="loadingRing">
                     <div class="ring"></div>
                 </div>
-                <div class="switch">
-                    <input id="toggle" type="checkbox">
-                    <label for="toggle"></label>
+                <div id="switch" class="switch">
+                    <input id="toggle" type="checkbox" onclick="toggleSwitch()">
+                    <label id="label" for="toggle"></label>
                 </div>
             </span>
         </div>
@@ -208,6 +208,7 @@
             </div>
         </div>
     </section>
+    <script src="./scripts.js" defer="defer"></script>
 </body>
 
 </html>
