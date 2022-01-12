@@ -73,7 +73,7 @@
   left: 20%; 
 }
 
-.pseudoElementos .before .actionArea input::{
+.pseudoElementos .before .actionArea input::before{
   content: "disabled";
   font-size: 15px;
   font-weight: bold;
@@ -82,7 +82,7 @@
   top: 30%;
 }
 
-.pseudoElementos .before .actionArea input:checked::after{
+.pseudoElementos .before .actionArea input:checked::before{
   content: "activated";
   color: rgb(18, 126, 8);
 }
