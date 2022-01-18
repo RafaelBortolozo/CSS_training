@@ -1,2 +1,2 @@
-# animations_css
-Learning and practicing some CSS animations, form, pseudo-classes and pseudo-elements
+# CSS training
+Learning and practicing new interface development techniques using CSS.
